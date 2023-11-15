@@ -168,7 +168,7 @@ nav>div>a:not(.navButton):active{ transform: translateY(7px); transition: 100ms;
     width: fit-content;
 }
 
-.workCard>h1{font-size: 25px;}
+.workCard>h1{font-size: 25px; margin-block: 10px;}
 .workCard>p{font-size: 20px;}
 
 .workCard img{
