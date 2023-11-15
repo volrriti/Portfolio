@@ -97,9 +97,6 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
 .nav-scrolled>*{
     margin-inline:15px;
 }
-.nav-scrolled h1,
-.nav-scrolled h2,
-.nav-scrolled>div>a{font-size: 17px;}
 
 
 /* INTERSECTION */
