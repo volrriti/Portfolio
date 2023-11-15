@@ -1,0 +1,213 @@
+/* SETUP */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Caslon+Display&display=swap');
+
+:root{
+    --bg: #f1f0ef;
+    --text: #121214;
+    --bg2: #f1f0ef9b;
+    --shadow: #85858521;
+    --bg3: rgb(241,240,239);
+    --bg4: radial-gradient(circle, rgba(241,240,239,1) 6%, rgba(232,226,228,1) 48%, rgba(241,240,239,1) 69%, rgba(239,230,236,1) 96%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    text-decoration: none;
+}
+
+body{
+    background: var(--bg4);
+}
+
+body>div{
+    margin-inline: 5%;
+}
+
+em{
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1{margin-block: 30px;
+    text-align: center;
+    font-size: 60px;
+}
+/* NAVIGATION BAR */
+.nav-container{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    transition: 1s ease;
+}
+
+nav>*{margin-inline: 5%; }
+
+nav>*,
+nav>a>*{font-size: 20px; margin-block: 0; text-align: start;}
+
+nav>a>h1{font-weight: 600;}
+nav>a>h2{font-weight: 300;}
+nav>a>*{letter-spacing: -0.5px;}
+
+nav>div{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navButton{
+    border: solid 1px;
+    padding: 6px;
+}
+
+/* NAVIGATION EFFECTS */
+
+nav a:not(.navButton){transition: 300ms;}
+nav>a:active{transform: translateY(7px); transition: 100ms;}
+
+nav>div>a:not(.navButton):hover{font-weight: 800;}
+nav>div>a:not(.navButton):active{ transform: translateY(7px); transition: 100ms;}
+
+.navButton{transition: 400ms ease;}
+.navButton:hover{border: var(--text); background: var(--text); color: var(--bg);}
+.navButton:active{transform: scale(90%); transition: 100ms;}
+
+
+/* SCROLLED NAVIGATION */
+
+.nav-scrolled{
+    width: 80%;
+    padding-block: 15px;
+    font-size: 20%;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    transform: translateY(15px);
+    background: var(--bg2);
+    box-shadow: 0 0 30px var(--shadow);
+}
+.nav-scrolled>*{
+    margin-inline:15px;
+}
+.nav-scrolled h1,
+.nav-scrolled h2,
+.nav-scrolled>div>a{font-size: 17px;}
+.nav-scrolled>div>.navButton{border-radius: 5px;}
+
+
+/* INTERSECTION */
+
+.intersection{
+    height: 10vh;
+}
+/* HERO */
+
+
+#hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+
+/* ABOUT */
+
+#about{
+    min-height: 60vh;
+    display: flex;
+    width: fit-content;
+    font-size: 35px;
+    letter-spacing: -2px;
+}
+
+.aboutCol{width: 50%;}
+
+/* RESUME */
+
+#resume table{
+    width: 100%;
+    font-size: 25px;
+}
+
+
+#resume th{width: 20%;}
+#resume>table{border-spacing: 30px;}
+
+.innerTable{border-block: solid 1px; border-collapse: collapse;}
+.innerTable td{border-block: solid 1px; padding-block:6px}
+.innerTable a{text-decoration: underline;}
+
+/* WORKS */
+
+.workCardContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.workCard{
+    margin-block:20px;
+    padding: 20px;
+    background: var(--shadow);
+    box-shadow: 0 0 30px var(--shadow);
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.workCard>h1{font-size: 25px;}
+.workCard>p{font-size: 20px;}
+
+.workCard img{
+    margin-block: 20px;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+.workCard a:hover{text-decoration: underline;}
+
+/* CONNECT */
+
+#connect{
+    margin-top: 50px;
+    border-top: solid 1px;
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#connect h1{
+    font-size: 25px;
+    text-align: start;
+    margin: 0;
+    font-weight: 600;
+}
+#connect h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.socials{
+    font-size: 25px;
+    margin-block: 0;
+}
+.contact{font-size: 20px;}
+
+#connect>div:nth-child(2){
+    font-size: 20px;
+    text-align: end;
+}
+.contact a{text-decoration: underline;}
