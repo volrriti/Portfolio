@@ -26,7 +26,7 @@ body{
 }
 
 body>div{
-    margin-inline: 5%;
+    margin-inline: 10%;
 }
 
 em{
@@ -68,25 +68,19 @@ nav>div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    padding-block: 10px;
 }
 
-.navButton{
-    border: solid 1px;
-    padding: 6px;
-}
+
 
 /* NAVIGATION EFFECTS */
 
 nav a:not(.navButton){transition: 300ms;}
 nav>a:active{transform: translateY(7px); transition: 100ms;}
 
-nav>div>a:not(.navButton):hover{font-weight: 800;}
-nav>div>a:not(.navButton):active{ transform: translateY(7px); transition: 100ms;}
-
-.navButton{transition: 400ms ease;}
-.navButton:hover{border: var(--text); background: var(--text); color: var(--bg);}
-.navButton:active{transform: scale(90%); transition: 100ms;}
-
+nav>div>a:hover{font-weight: 800;}
+nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
 
 /* SCROLLED NAVIGATION */
 
@@ -106,7 +100,6 @@ nav>div>a:not(.navButton):active{ transform: translateY(7px); transition: 100ms;
 .nav-scrolled h1,
 .nav-scrolled h2,
 .nav-scrolled>div>a{font-size: 17px;}
-.nav-scrolled>div>.navButton{border-radius: 5px;}
 
 
 /* INTERSECTION */
@@ -114,6 +107,8 @@ nav>div>a:not(.navButton):active{ transform: translateY(7px); transition: 100ms;
 .intersection{
     height: 5vh;
 }
+
+
 /* HERO */
 
 
