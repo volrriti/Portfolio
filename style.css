@@ -112,13 +112,13 @@ nav>div>a:not(.navButton):active{ transform: translateY(7px); transition: 100ms;
 /* INTERSECTION */
 
 .intersection{
-    height: 10vh;
+    height: 5vh;
 }
 /* HERO */
 
 
 #hero{
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     font-size: 60px;
