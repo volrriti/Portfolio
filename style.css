@@ -21,6 +21,10 @@
     text-decoration: none;
 }
 
+a{
+	color: var(--text)
+}
+
 body {
     background: var(--bg4);
 }
@@ -157,6 +161,10 @@ nav>div>a:active {
 
 .aboutCol {
     width: 50%;
+}
+
+.aboutCol:nth-child(1){
+	margin-right:5%;
 }
 
 /* RESUME */
