@@ -1,3 +1,6 @@
+
+// SECTIONOBSERVER
+
 const nav = document.querySelector("nav");
 const sectionOne = document.querySelector(".intersection");
 
@@ -13,3 +16,4 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
 });
 
 sectionOneObserver.observe(sectionOne)
+
