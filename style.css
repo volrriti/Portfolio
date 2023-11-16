@@ -2,16 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Caslon+Display&display=swap');
 
-:root{
+:root {
     --bg: #f1f0ef;
     --text: #121214;
     --bg2: #f1f0ef9b;
     --shadow: #85858521;
-    --bg3: rgb(241,240,239);
-    --bg4: radial-gradient(circle, rgba(241,240,239,1) 6%, rgba(232,226,228,1) 48%, rgba(241,240,239,1) 69%, rgba(239,230,236,1) 96%);
+    --bg3: rgb(241, 240, 239);
+    --bg4: radial-gradient(circle, rgba(241, 240, 239, 1) 6%, rgba(232, 226, 228, 1) 48%, rgba(241, 240, 239, 1) 69%, rgba(239, 230, 236, 1) 96%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -21,30 +21,35 @@
     text-decoration: none;
 }
 
-body{
+body {
     background: var(--bg4);
 }
 
-body>div{
+body>div {
     margin-inline: 10%;
 }
 
-em{
+em {
     font-style: normal;
+    font-weight: 400;
+}
+
+h1 {
+    margin-block: 30px;
+    text-align: center;
+    font-size: 2.625rem;
     font-weight: 500;
 }
 
-h1{ margin-block: 30px;
-    text-align: center;
-    font-size: 52px;
-}
 /* NAVIGATION BAR */
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-top: 1rem;
 }
-nav{
+
+nav {
     position: fixed;
     width: 100vw;
     padding-block: 20px;
@@ -55,16 +60,30 @@ nav{
     transition: 1s ease;
 }
 
-nav>*{margin-inline: 5%; }
+nav>* {
+    margin-inline: 5%;
+}
 
 nav>*,
-nav>a>*{font-size: 20px; margin-block: 0; text-align: start;}
+nav>a>* {
+    font-size: 1rem;
+    margin-block: 0;
+    text-align: start;
+}
 
-nav>a>h1{font-weight: 600;}
-nav>a>h2{font-weight: 300;}
-nav>a>*{letter-spacing: -0.5px;}
+nav>a>h1 {
+    font-weight: 600;
+}
 
-nav>div{
+nav>a>h2 {
+    font-weight: 300;
+}
+
+nav>a>* {
+    letter-spacing: -0.5px;
+}
+
+nav>div {
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -77,28 +96,38 @@ nav>div{
 
 /* NAVIGATION EFFECTS */
 
-nav a:not(.navButton){transition: 300ms;}
-nav>a:active{transform: translateY(7px); transition: 100ms;}
+nav a:not(.navButton) {
+    transition: 300ms;
+}
 
-nav>div>a:hover{font-weight: 800;}
-nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
+nav>a:active {
+    transform: translateY(7px);
+    transition: 100ms;
+}
+
+nav>div>a:hover {
+    font-weight: 800;
+}
+
+nav>div>a:active {
+    transform: translateY(7px);
+    transition: 100ms;
+}
 
 /* SCROLLED NAVIGATION */
 
-.nav-scrolled{
+.nav-scrolled {
     width: 80%;
     padding-block: 15px;
-    font-size: 20%;
-    border-radius: 20px;
+    border-radius: 100px;
     backdrop-filter: blur(5px);
-    transform: translateY(15px);
     background: var(--bg2);
     box-shadow: 0 0 30px var(--shadow);
 }
 
 /* INTERSECTION */
 
-.intersection{
+.intersection {
     height: 5vh;
 }
 
@@ -106,56 +135,81 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
 /* HERO */
 
 
-#hero{
+#hero {
     height: 95vh;
     display: flex;
     align-items: center;
-    font-size: 52px;
+    font-size: 42px;
+    font-weight: 400;
     letter-spacing: -2px;
 }
 
 /* ABOUT */
 
-#about{
+#about {
     min-height: 60vh;
     display: flex;
     width: fit-content;
-    font-size: 32px;
+    font-size: 2.0635rem;
     letter-spacing: -2px;
+    font-weight: 300;
 }
 
-.aboutCol{width: 50%;}
+.aboutCol {
+    width: 50%;
+}
 
 /* RESUME */
 
-#resume{
-    padding-top: 10%;}
+#resume {
+    padding-top: 10%;
+}
 
-#resume table{
+#resume table {
     width: 100%;
-    font-size: 25px;
+    font-size: 1.625rem;
+    font-weight: 300;
 }
 
 
-#resume th{width: 20%;}
-#resume>table{border-spacing: 30px;}
+#resume th {
+    width: 20%;
+    font-weight: 500;
+}
 
-.innerTable{border-block: solid 1px; border-collapse: collapse;}
-.innerTable td{border-block: solid 1px; padding-block:6px}
-.innerTable a{text-decoration: underline;}
+#resume>table {
+    border-spacing: 30px;
+}
+
+.innerTable {
+    border-block: solid 1px;
+    border-collapse: collapse;
+}
+
+.innerTable td {
+    border-block: solid 1px;
+    padding-block: 6px
+}
+
+.innerTable a {
+    text-decoration: underline;
+}
 
 /* WORKS */
 
-#works{margin-top:20%; padding-top: 10%;}
+#works {
+    margin-top: 20%;
+    padding-top: 10%;
+}
 
-.workCardContainer{
+.workCardContainer {
     display: flex;
     justify-content: center;
     margin-bottom: 20%;
 }
 
-.workCard{
-    margin-block:20px;
+.workCard {
+    margin-block: 20px;
     padding: 20px;
     background: var(--shadow);
     box-shadow: 0 0 30px var(--shadow);
@@ -163,22 +217,35 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     width: fit-content;
 }
 
-.workCard>h1{font-size: 25px; margin-block: 10px;}
-.workCard>p{font-size: 20px;}
+.workCard>h1 {
+    font-size: 25px;
+    margin-block: 10px;
+    font-weight: 500;
+}
 
-.workCard img{
+.workCard>p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.workCard img {
     margin-block: 20px;
     height: 80vh;
     border-radius: 20px;
 }
 
-.workCard a{font-size: 16px;}
+.workCard a {
+    font-size: 16px;
+}
 
-.workCard a:hover{text-decoration: underline;}
+.workCard a:hover {
+    text-decoration: underline;
+    font-weight: 300;
+}
 
 /* CONNECT */
 
-#connect{
+#connect {
     margin-top: 50px;
     border-top: solid 1px;
     display: flex;
@@ -188,24 +255,32 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     margin-bottom: 20px;
 }
 
-#connect h1{
+#connect h1 {
     font-size: 25px;
     text-align: start;
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
 }
-#connect h2{
+
+#connect h2 {
     font-size: 20px;
     font-weight: 300;
 }
-.socials{
+
+.socials {
     font-size: 25px;
     margin-block: 0;
 }
-.contact{font-size: 20px;}
 
-#connect>div:nth-child(2){
+.contact {
+    font-size: 20px;
+}
+
+#connect>div:nth-child(2) {
     font-size: 20px;
     text-align: end;
 }
-.contact a{text-decoration: underline;}
+
+.contact a {
+    text-decoration: underline;
+}
