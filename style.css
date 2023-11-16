@@ -34,7 +34,7 @@ em{
     font-weight: 500;
 }
 
-h1{margin-block: 30px;
+h1{ margin-block: 30px;
     text-align: center;
     font-size: 52px;
 }
@@ -42,6 +42,7 @@ h1{margin-block: 30px;
 .nav-container{
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 nav{
     position: fixed;
@@ -127,6 +128,9 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
 
 /* RESUME */
 
+#resume{
+    padding-top: 10%;}
+
 #resume table{
     width: 100%;
     font-size: 25px;
@@ -142,9 +146,12 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
 
 /* WORKS */
 
+#works{margin-top:20%; padding-top: 10%;}
+
 .workCardContainer{
     display: flex;
     justify-content: center;
+    margin-bottom: 20%;
 }
 
 .workCard{
