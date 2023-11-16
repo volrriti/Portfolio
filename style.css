@@ -36,7 +36,7 @@ em{
 
 h1{margin-block: 30px;
     text-align: center;
-    font-size: 60px;
+    font-size: 52px;
 }
 /* NAVIGATION BAR */
 .nav-container{
@@ -94,10 +94,6 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     background: var(--bg2);
     box-shadow: 0 0 30px var(--shadow);
 }
-.nav-scrolled>*{
-    margin-inline:15px;
-}
-
 
 /* INTERSECTION */
 
@@ -113,7 +109,7 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     height: 95vh;
     display: flex;
     align-items: center;
-    font-size: 60px;
+    font-size: 52px;
     letter-spacing: -2px;
 }
 
@@ -123,7 +119,7 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     min-height: 60vh;
     display: flex;
     width: fit-content;
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: -2px;
 }
 
@@ -169,6 +165,8 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     border-radius: 20px;
 }
 
+.workCard a{font-size: 16px;}
+
 .workCard a:hover{text-decoration: underline;}
 
 /* CONNECT */
@@ -180,6 +178,7 @@ nav>div>a:active{ transform: translateY(7px); transition: 100ms;}
     height: 30vh;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 #connect h1{
