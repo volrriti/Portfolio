@@ -193,6 +193,7 @@ nav>div>a:active {
 }
 .eyes{
     width: 40vw;
+	content: url(resources/eyeopen.png);
 }
 .eyes:hover{
     content: url(resources/eyeclose.png);
@@ -234,4 +235,5 @@ nav>div>a:active {
 .contact:hover{
     color: var(--accent);
 }
+
 
