@@ -17,3 +17,10 @@ const sectionOneObserver = new IntersectionObserver(function(entries, sectionOne
 
 sectionOneObserver.observe(sectionOne)
 
+//PUN
+
+const link = document.getElementById("pun");
+
+link.addEventListener("click", (e) => {
+  link.textContent = link.textContent === "Resume" ? "Pause" : "Resume";
+});
