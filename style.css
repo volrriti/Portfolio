@@ -54,11 +54,6 @@ body>div {
     margin-inline: 10%;
 }
 
-em {
-    font-style: normal;
-    font-weight: 400;
-}
-
 h1 {
     font-family: InstrumentSerif;
     margin-block: 30px;
@@ -117,10 +112,6 @@ nav>a>* {
 nav>a>h1 {
     font-weight: 200;
     font-size: 3rem;
-}
-
-nav>a>h2 {
-    font-weight: 300;
 }
 
 nav>a>* {
@@ -217,14 +208,9 @@ nav>div>a:active {
     font-weight: 400;
 }
 
-#connect h2 {
-    font-size: 20px;
-    font-weight: 300;
-}
-
 .contact {
     font-size: 20px;
-    text-decoration: underline;
+    font-weight: 300;
 }
 
 #connect>div:nth-child(2) {
@@ -234,6 +220,3 @@ nav>div>a:active {
 .contact:hover{
     color: var(--accent);
 }
-
-
-
